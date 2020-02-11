@@ -41,7 +41,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.lastText = new System.Windows.Forms.TextBox();
             this.bCreate = new System.Windows.Forms.Button();
-            this.PersonID = new System.Windows.Forms.Label();
+            this.bCreateCSV = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // peopleFoundListbox
@@ -145,7 +145,7 @@
             // 
             // bCreate
             // 
-            this.bCreate.Location = new System.Drawing.Point(360, 337);
+            this.bCreate.Location = new System.Drawing.Point(331, 330);
             this.bCreate.Name = "bCreate";
             this.bCreate.Size = new System.Drawing.Size(130, 38);
             this.bCreate.TabIndex = 12;
@@ -153,23 +153,22 @@
             this.bCreate.UseVisualStyleBackColor = true;
             this.bCreate.Click += new System.EventHandler(this.bCreate_Click);
             // 
-            // PersonID
+            // bCreateCSV
             // 
-            this.PersonID.AutoSize = true;
-            this.PersonID.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PersonID.ForeColor = System.Drawing.Color.Red;
-            this.PersonID.Location = new System.Drawing.Point(406, 253);
-            this.PersonID.Name = "PersonID";
-            this.PersonID.Size = new System.Drawing.Size(56, 42);
-            this.PersonID.TabIndex = 13;
-            this.PersonID.Text = "ID";
+            this.bCreateCSV.Location = new System.Drawing.Point(469, 330);
+            this.bCreateCSV.Name = "bCreateCSV";
+            this.bCreateCSV.Size = new System.Drawing.Size(130, 38);
+            this.bCreateCSV.TabIndex = 13;
+            this.bCreateCSV.Text = " CSV File";
+            this.bCreateCSV.UseVisualStyleBackColor = true;
+            this.bCreateCSV.Click += new System.EventHandler(this.bCreateCSV_Click);
             // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(611, 395);
-            this.Controls.Add(this.PersonID);
+            this.Controls.Add(this.bCreateCSV);
             this.Controls.Add(this.bCreate);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.lastText);
@@ -207,7 +206,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox lastText;
         private System.Windows.Forms.Button bCreate;
-        private System.Windows.Forms.Label PersonID;
+        private System.Windows.Forms.Button bCreateCSV;
     }
 }
 

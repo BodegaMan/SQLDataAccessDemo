@@ -23,6 +23,19 @@ namespace FormUI
             
         }
 
+        public List<Person> GetAllPeople()
+        {
+
+            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(Helper.CnnVal("SampleDB")))
+            {
+                //return connection.Query<Person>($"SELECT * FROM PEOPLE WHERE LASTNAME = '{lastName}'").ToList();
+                var output = connection.Query<Person>("dbo.People_GetAll").ToList();
+                return output;
+            }
+
+        }
+
+
         public int CreatePerson(string firstName, string lastName, string email, string phone)
         {
             using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(Helper.CnnVal("SampleDB")))
